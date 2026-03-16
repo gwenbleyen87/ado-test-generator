@@ -1,0 +1,19 @@
+{
+  "name": "ado-test-generator",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "shared",
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "concurrently -n backend,frontend -c blue,green \"npm run dev -w backend\" \"npm run dev -w frontend\"",
+    "build": "npm run build -w shared && npm run build -w backend && npm run build -w frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "pptxgenjs": "^4.0.1",
+    "puppeteer": "^24.39.1"
+  }
+}
