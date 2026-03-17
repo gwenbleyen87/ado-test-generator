@@ -123,7 +123,7 @@ npm run dev
 - **Frontend**: http://localhost:5173
 - **Backend**: http://localhost:3001
 
-## User Flow
+## User Flow (Mermaid syntax)
 
 The app follows a 5-step wizard flow:
 
@@ -146,7 +146,7 @@ flowchart LR
 | **4. Generate** | 3-agent AI pipeline with real-time SSE progress streaming |
 | **5. Preview & Export** | Review generated test cases and download as `.xlsx` |
 
-## Architecture
+## Architecture (Mermaid syntax)
 
 ```mermaid
 flowchart TB
@@ -254,7 +254,7 @@ Each agent call uses the Azure OpenAI Chat Completions API with JSON response fo
 - **Test Cases** — formatted for Azure Test Plans import (ID, title, steps, priority, area path, iteration path)
 - **Summary** — feature-level statistics (criteria count, test case count, type distribution)
 
-### Data Flow Diagram
+### Data Flow Diagram (Mermaid syntax)
 
 ```mermaid
 flowchart LR
@@ -317,7 +317,7 @@ flowchart LR
 - Deploy behind a reverse proxy with TLS termination
 - Consider Azure Managed Identity instead of API keys for Azure OpenAI access
 
-## AI Pipeline
+## AI Pipeline (Mermaid syntax)
 
 Each feature's test cases are generated through three sequential AI agents:
 
